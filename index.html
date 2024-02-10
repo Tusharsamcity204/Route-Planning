@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Planner</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+        .top-left {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-left">Aman-15042 Project</div>
+    <div>
+        
+        
+        <h1>Route Planner</h1>
+    
+    
+    </div>
+    <div id="map"></div>
+    <div>
+    <input type="text" class="input-lg" id="address-input" placeholder="Enter job location">
+    <button type="button" class="btn btn-dark btn-lg down" id="add-marker-btn">Add Job Location</button>
+</div>
+<div>
+    <input type="text" class="input-lg" id="current-location-input" placeholder="Enter current location">
+</div>
+<div>
+    <button type="button" class="btn btn-info btn-lg down" id="plan-trip-btn">Plan Trip</button>
+</div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
